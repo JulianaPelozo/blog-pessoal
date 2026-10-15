@@ -482,10 +482,7 @@ lightbox.addEventListener('touchend', (e) => {
 
 document.getElementById('theme-toggle').addEventListener('click', () => {
   const root = document.documentElement;
-  const isDark = root.dataset.theme
-    ? root.dataset.theme === 'dark'
-    : matchMedia('(prefers-color-scheme: dark)').matches;
-  root.dataset.theme = isDark ? 'light' : 'dark';
+  root.dataset.theme = root.dataset.theme === 'light' ? 'dark' : 'light';
   try { localStorage.setItem('theme', root.dataset.theme); } catch {}
 });
 

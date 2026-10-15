@@ -20,6 +20,7 @@
     <div class="topbar__inner">
       <a href="#/" class="brand">📝 <span>Meu Diário</span></a>
       <nav class="topbar__actions">
+        <button class="icon-btn" id="glitter-toggle" type="button" aria-label="Ligar/desligar glitter" aria-pressed="true">✨</button>
         <button class="icon-btn" id="theme-toggle" type="button" aria-label="Alternar tema">🌓</button>
         <a href="#/novo" class="btn btn--primary">
           <span aria-hidden="true">＋</span><span class="hide-sm">Novo post</span>
@@ -38,8 +39,11 @@
     <span class="lightbox__count"></span>
   </div>
 
+  <canvas id="glitter" class="glitter" aria-hidden="true"></canvas>
+
   <div id="toasts" class="toasts" role="status"></div>
 
   <script type="module" src="/js/app.js"></script>
+  <script type="module" src="/js/glitter.js"></script>
 </body>
 </html>
