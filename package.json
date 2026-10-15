@@ -1,0 +1,19 @@
+{
+  "name": "blog-pessoal",
+  "version": "1.0.0",
+  "description": "Blog pessoal local para escrever sobre o dia a dia, com upload de imagens.",
+  "type": "module",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node --no-warnings=ExperimentalWarning server/index.js",
+    "dev": "node --no-warnings=ExperimentalWarning --watch server/index.js"
+  },
+  "engines": {
+    "node": ">=22.13"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.22.3",
+    "multer": "^2.4.0"
+  }
+}
